@@ -7,7 +7,7 @@ Javascript 1. hafta çalışmaları , temel js, DOM, Array/Object işlemleri min
 Bu repoda, JavaScript temel konuları üzerine yaptığım alıştırmalar ve küçük projeler bulunmaktadır.  
 Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yapmaktır.
 
-## 🚀 Konular
+ Konular
 
 - Değişken tanımlama (`let`, `const`, `var`)
 - Fonksiyonlar (normal & arrow function)
@@ -18,9 +18,9 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
 - LocalStorage --henüz yayınlanmadı
 - fetch API ile veri çekme -- henüz yayınlanmadı
 
-## 📂 Dosya Yapısı
+ Dosya Yapısı
 
-```
+
 /01-basic-html
   - 1-variable.html
   - 2-functions.html
@@ -35,14 +35,12 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
   - to-do-list.html
 
 
-```
-
-## 📌 Notlar
+ Notlar
 
 - Bu çalışma, frontend alanında kendimi geliştirmek ve düzenli çalışmak isteyenler için oluşturulmuştur.
 - Günde 10 saat çalışarak haftalık olarak konu tekrarı ve proje geliştirme hedeflenmektedir.
 
-## 🧑‍💻 Geliştirici
+
 
 **Tayfun Çakır**  
 Frontend Developer  
