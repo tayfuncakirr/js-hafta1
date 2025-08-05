@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <input type="text" id="name" placeholder="Adınızı girin">
+      <button onclick="showName()">göster</button>
+    <p id="paragraf">Hello</p>
+    <p class="text">Selam</p>
+    <script>
+
+     
+      
+
+
+
+
+   /*
+             -------------------------- DOM manipulasyonu --------------------------
+
+        
+   
+     // ID ile seçme
+    const p1 = document.getElementById("paragraf");
+
+     // ilk eşleşen elemanı seçer
+    const p2 = document.querySelector(".text");
+
+     // tüm eşleşen p taglarını seçer(Nodelist döner)
+    const p3 = document.querySelectorAll("p");
+
+    --------------------------------------------------
+
+    İCERİK DEGİSTİRME 
+
+    const p = document.getElementById("paragraf");
+
+      p.innerText = "new text";
+      //sadece metni değiştirir.
+
+      p.innerHTML = "<b>bold text</b>"
+      //HTML olarak işler.
+
+      p.textContent = "<b>not bold</b>"
+      // HTML etiketlerini düz yazı olarak yazar.
+
+    ---------------------------------------------------------------
+
+    STYLE DEGİSTİRME
+
+    const p = document.getElementById("paragraf");
+    
+    // tekli stiller
+    p.style.color = "red";
+    p.style.fontSize = "20px"
+
+    //sınıf ekle/çıkar
+
+    p.classList.add("red");
+    p.classList.remove("red");
+    p.classList.toggle("red"); //varsa çıkarır, yoksa ekler.
+
+    ---------------------------------------------------------------
+
+    ELEMAN OLUŞTURMA/SILME
+
+    const newP = document.createElement("p");
+        newP.innerText = "Yeni paragraf";
+          
+        //body nin altına ekler.
+        document.body.appendChild(newP);
+        
+        //silmek için
+        newP.remove();
+
+    ---------------------------------------------------------------
+
+    INPUTLARDAN DEGER ALMA 
+
+    function showName(){
+        const inputValue = document.getElementById("name").value.trim(); // input un içindeki girilecek değer .value ile alınıyor
+        alert("hoşgeldiniz: " + inputValue)
+     }
+
+    -------------------------------------------------------------------
+    CLICK EVENTS
+    
+        const paragraf  = document.getElementById("paragraf");
+
+      paragraf.addEventListener("click", ()=>{ // addeventlistener ile yazının üzerine tıklama anı nı alıyoruz
+        paragraf.innerText = "how are you";
+      })
+
+*/
+
+
+
+    
+
+        
+
+    
+
+
+
+  
+
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        -------------------------------FUNCTION DECLARATIONS---------------------------------
+
+        function fonksiyonAdi(){
+             return "fonksiyonun döndüreceği değer"
+        }
+             console.log(fonksiyonAdi()) // Fonksiyonu çağırıp, console ekranında yazdırma.
+
+        -----------------
+
+         function showName(){  
+        return "tayfun"
+       }
+       console.log(showName()) // cıktı: tayfun
+       
+       -----------------
+
+       function sayHello(){
+        console.log("hello world");
+       }
+       sayHello() // çıktı: "hello world"
+        
+       ------------------
+
+       function showname(name){    // fonksiyonlar dışarıdan parametre alabilir.Fonksiyon adından sonra parametreyi yazıyoruz
+           console.log("merhaba", name)
+        }
+        showname("tayfun")  //cıktı: merhaba tayfun  => parametre alan fonksiyonumuza burda argüman veriyoruz.
+ 
+        -----------------
+
+        function sum(a,b){
+          return a + b ;
+        }
+
+        console.log(sum(3,5)) // cıktı: 8
+
+        ----------------
+
+        function sum(...numbers){   => rest parametredir birden fazla parametre alabilir ve dizi şeklinde toplar.
+
+        let sonuc = numbers.reduce((frontNum,afterNum)=> frontNum + afterNum, 0)
+         console.log(sonuc)
+      }
+       sum(2,4,6,7) //cıktı: 19
+
+       --------------------------------------- ARROW FUNCTION ------------------------------------------
+
+       Tanımlama formülü : ()=>{}
+
+       const sum = (a,b)=>{
+           console.log(a + b) ;
+        }
+         sum(3,4) // cıktı: 7
+
+        NOT: arrow function da this bağlamı yoktur. this bağlamının kullanılacağı durumlarda, diğer fonksiyon tipleri kullanılabilir.
+        
+        ----------------------------------- FUNCTION EXPRESSION --------------------------------------------
+  
+        const sum = function (a,b){
+
+            console.log("toplam:", a + b);
+
+        }
+        sum(4,2) // cıktı : toplam: 6
+
+        --------------------------------------- CALLBACK FUNCTIONS -----------------------------------------------
+
+        Fonksiyon içine parametre olarak başka bir fonksiyon gönderme.
+
+        function process(num, callback){        // ana fonksiyon 2 parametre aldı.
+          let result = num * 2                  // aldığı ilk parametreyi 2 ile çarpıp değişkene atadı.
+          callback(result)                      // 2. parametre olan callback ise bu sonucu döndürecek.
+        }
+        function showProcess(value){            // callback fonksiyonu 1 parametre aldı.
+          console.log("sonuc: ", value)         // bu fonksiyonun görevi ise yukarıdaki fonksiyonu yazdırmak oldu. 
+        }
+        process(5, showProcess)  //cıktı: 10
+
+        -----------------------
+
+        setTimeout(()=>{
+            console.log("3 saniye sonra çalıştım")  // bu fonksiyonun içine callback bir arrow function gönderdik.
+        },3000)
+
+
+
+        -------IIFE (Immediately Invoked Function Expression) Kendini otomatik çagıran fonksiyonlar-------------
+          --------kendini çagıran normal fonksiyon---------
+          (function (){
+            console.log("hello say")
+          })();
+
+        ---------kendini çağıran arrow fonksiyonu -----------
+
+       (()=>{
+        console.log("iyi geceler")
+       })();
+
+       ----------- kendini çağıran parametreli fonksiyon----------
+       
+          (function(name){
+            console.log("merhaba", name)
+          })("tayfun");
+
+*/
+
+// Callback fonksiyonları kullanım alanları
+//     1. Asenkron İşlemler
+//     2. Event Listener (Olay Dinleyiciler)
+//     3. Array İşlemleri (map, filter, forEach...)
+//     4. Promise ve Async/Await Öncesi Asenkron Kontrol
+
+/* Nerelerde Kullanmazsın?
+Çok katmanlı callback kullanımı "callback hell" yaratabilir. Bu durumda Promise ya da async/await daha okunabilir olur.
+
+Basit işlemlerde genellikle gerek yoktur.
+
+CLOSURE
+"Bir fonksiyon, tanımlandığı anda erişebildiği değişkenlere ileride de erişmeye devam edebiliyorsa buna closure denir."
+Closure, bir fonksiyonun kendi scope’u dışında tanımlanmış değişkenlere erişmeye devam edebilmesidir — hatta bu fonksiyon, o scope kapanmış olsa bile.
+
+Yani bir iç fonksiyon, dış fonksiyonun değişkenlerine erişebiliyorsa, bu bir closure’dır.
+*/
+        
+
+        
+
+ 
+
+
+        
+
+        
+
+        
+
+
+        
+      
+      
+        
+       
+       
+    </script>
+</body>
+</html>

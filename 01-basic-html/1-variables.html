@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+                               /*-------------------DEĞİŞKENLER(VARIABLES)-----------------------*/
+
+/* Js de 3 tane değişken tipi bulunuyor. CONST, LET, VAR 
+
+1- CONST = sabit değerli değişkenler için const değişken türünü kullanıyoruz,
+yani bu değişkene verilen değeri daha sonra değiştirme durumu olmuyor.*/
+
+//const num = 5;
+//console.log("değişken değeri:", num)
+// çıktı => "değişken değeri : 5"
+
+// --------------------------
+
+//const num = 5;
+//num = 3;
+//console.log("değişken değeri:", num)
+// çıktı: uncaugth typerror
+/*----------------------------------------------------------------------------*/
+
+/*
+
+2-VAR = bu değişken function kampsamlıdır. block kapsamlı değildir.if bloğu içinde kullanıldığında scope dışına ve içine yazılabilir
+ ancak global de aynı değişken varsa karışıklık olabilir ve tanımlandıktan sonra bir daha tanımlanabilir.
+bu yüzden biraz düzensiz bir değişkendir ve kafa karıştırıcı olabiliyor.
+Ayrıca döngüler için kullanıldığında sorun olabiliyor.
+
+var num = 5;
+var num = 3;
+console.log(num); // çıktı: 3
+
+----------
+
+if (true){
+    var num = 5;
+}
+
+console.log(num) // çıktı: 5
+
+---------
+
+for (var i = 0; i < 5; i ++){
+     
+}
+
+console.log(i) // çıktı 5
+
+---------------------------------------------------------------------------------------------------------
+3. LET = Block kapsamlıdır. if bloğu içinde sadece scope içinde kullanabiliriz bu da daha açık, anlaşılır kod yazmak için idealdir.
+tanımlandıktan sonra aynı yerde bir daha tanımlanmaz, buda karışıklığı önlemek adına iyi bir tercihdir
+
+let num = 5;
+let num = 3;
+console.log(num); // çıktı: syntaxError
+
+---- Yukarıda bu örnegi var ile yaptık ve "3" değerini aldık ancak let ile global de değişiklik yapamadık.
+
+ÇÖZÜM :
+------------
+let num = 5;
+num = 3;
+console.log(num); // çıktı: 3
+
+--------------------------------
+
+if (true){
+    let num = 5;
+}
+
+console.log(num) // çıktı: ReferenceError
+
+---- Aynı şekilde (var) örneginde, sonucumuz "5" iken let ile if blogu dışında, hata aldık.
+
+ÇÖZÜM:
+
+if (true){
+    let num = 5;
+    console.log(num); // çıktı: 5
+}
+
+------------------------------ VAR ve LET değişkeni arasındaki farklar ----------------------------------
+
+    VAR ve LET farkı = var değişkeni globalde veya aynı fonksiyon içinde tekrar tanımlanabilirken,
+let aynı isim ve değerde tekrar tanımlanamaz bu yüzden karışıklık önlenebilir.
+var, if bloğu içinde tanımlansa da blok dışında da kullanılabilir ancak let hata verir,
+yani let değişken tipi uyarıcı ve düzenlidir.
+
+
+------------------------------------------
+var x = 1;
+let y = 2;
+console.log(this.x) // çıktı: 1
+console.log(this.y) // çıktı: undefined
+
+--------------------------------------------
+
+function variables(){
+    if(true){
+        var functionVariable = 1;
+        let blockVariable =2;
+
+        console.log(functionVariable); // çıktı: 1
+        console.log(blockVariable);    // çıktı: 2
+    if(true){
+        console.log(functionVariable); // çıktı: 1
+        console.log(blockVariable);    // çıktı: 2
+    }
+    }
+        console.log(functionVariable); // çıktı: 1
+        console.log(blockVariable);    // çıktı: referenceError
+}
+variables();
+
+ ---- Yukarıdaki let değişkenimiz if bloğu dışında tanımladığı zaman hata aldı.
+
+ -------------------------------------------------------------
+
+ for (var i = 0; i < 5; i++){
+    setTimeout(()=> console.log(i),1000
+)} // 5 , çünkü i global olduğundan döngüden sonra 3 oluyor
+
+--------------
+
+for (let i = 0; i < 5; i++){
+    setTimeout(()=> console.log(i),1000
+)} // 0,1,2,3,4 çünkü i her döngüde ayrı block kapsamındadır.
+
+NOT: Değişkenler de hoisting durumu vardır, "hoisting" js'de değişken tanımlamaları ve fonksiyon bildirilerini,
+kod çalışmadan önce belleğe taşıma davranışıdır, ancak var değişkeni tanımlanmadan önce çağrıldığında undefined dönerken ,
+let ve const referenceError verir.Bunun nedeni let ve const değişkenleri, tanımlandıkları satıra kadar kilitli bir alanda durur.
+Bu alana Temporal Dead Zone(TDZ) denir.Tanımlanmadan önce erişmeye çalışılırsa hata verir.
+
+*/
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>
