@@ -19,10 +19,43 @@
 
 
    /*
-             -------------------------- DOM manipulasyonu --------------------------
+             -------------------------- DOM manipulasyonu ve OLAY İŞLEYİCİLER(EVENTHANDLENGS)--------------------------
 
-        
-   
+    TEMEL OLAY TÜRLERİ
+    -click : tıklama
+    -dblclick : çift tıklama
+    -input : input değeri değiştiğince
+    -change : input, select veya checkbox değeri değişince
+    -submit : form gönderilince
+    -keydown / keyup : klavyeye basılınca /bırakılınca
+    -keypress: tuşa basılınca (bazı tarayıcılar artık desteklemiyor)
+    -mouseover / mouseout: mouse üzerine bir kere gelince / çıkınca
+    -mouseenter / mouseleave : mouse üzerine bir kere girince / çıkınca
+    -focus / blur: inputa odaklanınca/ odak kaybedince
+    -contextmenu : sağ tıklama menüsü açılınca
+    -scroll :scroll hareketi oldugunda
+    -load: sayfa ya da medya yüklendiğinde
+    -resize: window yeniden boyutlandırıldıgında
+    -touchstart, touchend,touchmove: mobil dokunma olayları
+    -drag,dragstart,dragend,drop: sürükle-bırak olayları
+
+    -----------------------
+
+    Bir olay gerçekleştiğinde fonksiyona otomatik olarak event nesnesi gelir.Bu nesne ile olay hakkında detaylara ulaşılır.
+    e veya event olarak adlandırılabilir.
+
+    -e.preventDefault() : varsayılan davranışı engeller(submit form gönderimini engellemek vb.)
+    -e.stopPropagation(): olayın üst öğelere yayılmasını durdurur.
+    -e.target : olayın gerçekleştiği öğe(tag)
+    -e.currentTarget : event listener'ın bağlandığı öğe
+    -e.key: klavyeden basılan tuş
+    -e.clientX / e.clientY : mouse'un tıklama durumu (ekranda)
+    -e.type : olay tipi (click,submit, vs.)   
+    -e.code : klavye tuşu kodu (keyA, enter, vs.)
+    ------------------------------------------
+
+      ------SELECTORS----------
+
      // ID ile seçme
     const p1 = document.getElementById("paragraf");
 

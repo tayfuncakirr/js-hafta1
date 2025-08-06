@@ -13,10 +13,14 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
 - Fonksiyonlar (normal & arrow function)
 - Döngüler (`for`, `while`, `forEach`)
 - Array metodları (`map`, `filter`, `reduce`)
-- DOM işlemleri
-- Event handling (`olay dinleme`)
-- LocalStorage --`henüz yayınlanmadı`
-- fetch API ile veri çekme -- `henüz yayınlanmadı`
+- DOM işlemleri  -eksik-
+- Event handling (`olay dinleme`) -eksik-
+- fetch API ile veri çekme
+- LocalStorage -- today
+- Try-catch yapısı -- 
+- Promise -
+
+
 
  Dosya Yapısı
 
