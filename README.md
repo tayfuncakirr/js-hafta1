@@ -41,9 +41,9 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
     
 /04-examples 
   /to-do-list
-    - index.html
-    - script.js
-    - style.css 
+   - index.html
+   - script.js
+   - style.css 
     
  - list-add.html
 
