@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+           
+        
+       /*
+       ---------------------------- SESSION STORAGE, LOCAL STORAGE -----------------------------------
+
+-Sessionstorage = verileri saklama amacı ile kullanılırlar, ancak sadece tarayıcının yenilendiği durumlarda veri saklanır.
+diğer durumlarda tarayıcı kapandığında geçerli değildir.window objesi içinde bulunurlar,
+ key,value ilişkisi ile tanımlanırlar ve string değerler alırlar.
+
+       sessionStorage.setItem("id:1", "tayfun");
+      sessionStorage.setItem("id:2", "hasan");
+
+    //ilk değer key, ikinci değer value olur.Verilerin saklandığı yeri console ekranının olduğu bölümde
+    //  application sekmesi içinde storage kısmından görebilirsiniz.
+    
+    
+     const value = sessionStorage.getItem("id:1");
+     console.log(value);
+     //sakladığımız veriyi getitem ile alıyoruz
+
+     Değer silme
+     // sessionStorage.removeItem("id:1")
+
+     Verilerin tamamını silme 
+     //sessionStorage.clear();
+
+     NOT: storage da veriler string olarak değer alır ve geri ye string olarak değer verir.
+    bu değerleri arraylarda kullanmak için JSON.stringify ile saklayıp , JSON.parse ile geri almamız gerekir.
+
+    ÖRNEK
+
+    const users = ["ali","ahmet","mehmet","ayşe"];
+
+        sessionStorage.setItem("users", JSON.stringify(users));
+        //artık veriyi storage e array olarak verdik, yani storage de array olarak saklanıyor.
+
+        let value = JSON.parse(sessionStorage.getItem("users"));
+         console.log(value)
+         // verileri array olarak geri aldık. json.parse kullanmamızın sebebi arrayler uzerinde dönebilmek.
+         (4) ['ali', 'ahmet', 'mehmet', 'ayşe']
+
+----------------------------------------------------------------------------
+
+         const users = ["ali","ahmet","mehmet","ayşe"];
+
+        sessionStorage.setItem("users", JSON.stringify(users));
+
+         let value = JSON.parse(sessionStorage.getItem("users"));
+         value.forEach((user)=>{
+            console.log(user)
+         })
+
+    Localstorage = sessionstorage dan tek farkı sayfa veya bilgisayar kapansa bile veriyi saklayabilmesidir.
+    bu durum kod blokları silinmiş olsa dahi geçerlidir.kullanım olarak aynıdır.
+    
+    const users = ["ahmet", "mehmet","ali","ayşe"];
+
+           localStorage.setItem("users", JSON.stringify(users));
+
+           let value = JSON.parse(localStorage.getItem("users"));
+           console.log(value)
+
+
+           Değer silme
+     // localStorage.removeItem("users")
+
+     Verilerin tamamını silme 
+     //localStorage.clear();
+
+       */
+    
+
+    </script>
+
+</body>
+</html>
