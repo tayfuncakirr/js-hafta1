@@ -40,10 +40,10 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
   - dom-test.html
     
 /04-examples 
-  /to-do-list
-   - index.html
-   - script.js
-   - style.css 
+ /to-do-list
+  - index.html
+  - script.js
+  - style.css 
     
  - list-add.html
 
