@@ -31,12 +31,21 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
   - 3-loops.html
 
 /02-array-object
+  - fetch-json.html
   - arrays.html
   - object.html
+  - storage.html
 
 /03-dom
-  - list-add.html
-  - to-do-list.html
+  - dom-test.html
+    
+/04-examples 
+ /to-do-list
+  - index.html
+  - script.js
+  - style.css 
+    
+ - list-add.html
 
 
  Notlar
