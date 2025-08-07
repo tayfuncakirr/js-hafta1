@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Todo List Sayfası</h5>
+            </div>
+            <div class="card-body">
+                <form id="todoAddForm">
+                <input type="text" class="form-control" id="todoName" placeholder="Yeni Todo Giriniz...">
+                <button id="todoAddButton" class="btn-add" type="submit">Todo Ekleyin</button>
+                </form>
+            </div>
+            <hr/>
+            <div class="card-body">
+                <h5 class="card-title">Todo Listesi</h5>
+                <form name="form2" id="todoListForm">
+                    <input type="text" id="todoSearch" class="form-control" placeholder="Ara...">
+                    
+                </form>
+                <ul class="list-group">
 
+                </ul>
+                <button id="clearButton" class="btn">Tüm Todoları Temizle</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
