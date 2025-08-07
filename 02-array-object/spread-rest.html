@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        ----------------------------- SPREAD OPERATOR -----------------------------
+        Spread, bir diziyi veya objeyi parçalayarak yaymak için kullanılır.Atama içinde tanımlanırlar.
+        
+        const array1 = [1,2,3];
+        const array2 = [...array1, 4,5];
+
+       console.log(array2); // [1,2,3,4,5]
+
+       yani array1, dizinin içini tek tek elemanlara ayırır.
+
+       -----------------------------------------------------------------
+
+       const person = {
+        name:"tayfun",
+        age:28
+       };
+       const newValue = {
+        ...person,
+        city:"istanbul"
+
+       };
+       console.log(newValue); // {name:"tayfun", age:28, city:istanbul}
+
+       Buda objenin kopyasını oluşturmak ve yeni değer eklemek için oldukça kullanışlıdır.
+
+       --------------- REST OPERATOR -----------------
+       Rest ise parametreleri veya değerleri tek bir değişkende toplar.Yani tersi gibi düşünebilirsiniz.Fonksiyonlarda ve
+       destructure lar da tanımlanırlar.
+
+       function sum(...numbers) {
+            return numbers.reduce((total,num)=>total + num, 0)
+
+        }
+        console.log(sum(1,2,3,4)) // 10
+        ...numbers burada tüm gelen argümanları tek bir array olarak toplar.
+
+        ----------------------------
+
+        Destructuring ile kullanım:
+
+        Rest Operatörü ile Obje Ayırma (Destructuring)
+
+        Bir objeyi parçalarken, geri kalan alanları ayrı bir obje olarak almak istersek ...rest kullanılır.
+
+        const user = {
+        name:"tayfun",
+        age:30,
+        jod:"frontend developer"
+      }
+
+      const {name, ...others} = user;
+
+      console.log(name); // tayfun
+      console.log(others) // {age: 30, jod: 'frontend developer'}
+
+        ------------------------------
+
+        const [first, ...others] = [10, 20, 30, 40];
+
+      console.log(first);  // 10
+      console.log(others); // [20,30,40]
+
+        ---------------------------
+      Examples:
+
+      const fruits = ["apple", "banana"];
+      const moreFruits = ["cherry", "orange"];
+
+      const [allFruits] = [...fruits, ...moreFruits]; 
+      console.log(allFruits)  //  ["apple", "banana", "cherry", "orange"]
+
+      ---------------------------
+
+      const users = {
+        name:"tayfun",
+        age:20
+     }
+
+     const newUsers = {...users}
+
+     console.log(newUsers)
+
+     Bu işlem user objesinin birebir aynısını newUser olarak kopyalar.
+     Ancak artık birbirlerinden bağımsızdırlar.
+
+     -----------------------------------------
+
+     const person = {
+            name:"tayfun",
+            age:25
+        }
+
+        const newPerson = {...person, age:30} 
+
+        console.log(person) // {name: 'tayfun', age: 25}
+        console.log(newPerson) // {name: 'tayfun', age: 30}
+
+        Burada, age alanını ezdik (üstüne yazdık), diğer tüm alanlar aynı kaldı.
+
+
+*/
+
+        
+      
+
+
+      
+     
+
+       
+    </script>
+
+    
+</body>
+</html>
