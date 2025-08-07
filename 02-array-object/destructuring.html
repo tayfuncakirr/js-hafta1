@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        ---------------------------------- DESTRUCTURING(Nesne ve Dizi Parçalama) ----------------------------------
+
+    Destructuring = Objelerin veya dizilerin elemanlarını tek tek değişkenlere kolayca çıkarmaya yarar.
+
+
+    Array destructuring:
+
+       const numbers = [10,20,30];
+
+       const [a, b, c] = numbers;
+
+       console.log(a); // 10
+       console.log(b); // 20
+       console.log(c); // 30
+    
+       ----------------------------------
+
+       const colors = ["red", "green","blue", "yellow"];
+
+       const [first , , third] = colors;
+
+       console.log(first);
+       console.log(third);
+
+       -------------------------------------------------
+
+        const colors = ["red", "green", "blue", "yellow"];
+
+        const [ , second, , fourth] = colors;  // İlk elemanı (red) almıyoruz (,) kullanıyoruz
+        console.log(second); // green          // second değişkeniyle 2. elemanı (green) alıyoruz
+                                               // 3.elemanı (blue) almıyoruz
+        console.log(fourth); // yellow         // fourth değişkeniyle 4. elemanı (yellow) alıyoruz
+
+        
+        const user = {
+        name:"tayfun",
+        age:28,
+        city:"istanbul"
+       }
+
+       NOT: dizilerde her dizinin indis numarası olduğu için first,second,... olarak alabiliyoruz.
+       ------------------------------------------------------------------------------------------
+
+       Object destructuring:
+
+       const { name , age} = user;  //Destructuring ile nesneden değişken çekiyoruz
+
+       console.log(name); 
+       console.log(age)
+
+       yani user.name yazmak yerine doğrudan name şeklinde kullanabiliyoruz.
+
+       ---------------------------------------------------------------------
+
+       Nested destructuring:
+
+       const user = {
+         name: "Ayşe",
+         location: {
+         city: "Ankara",
+         country: "Türkiye"
+        }};
+ 
+     const { location: { city, country } } = user;  // iç içe bir yapı varsa aynı şekilde süslü parantez kullanıyoruz.
+
+      console.log(city);     // Ankara
+      console.log(country);  // Türkiye
+
+      ------------------------------------------------------------------
+
+      Function destructuring;
+
+      Bu özellik sayesinde bir fonksiyon çağrılırken gelen objeyi parçalayarak direkt kullanabiliriz.
+
+      const user = {
+        name:"tayfun",
+        age:28
+     }
+
+     const printUser =({name,age})=>{
+        console.log(`ad: ${name} , yaş: ${age}`)
+     }
+
+     printUser(user);  // ad: tayfun , yaş: 28
+
+     Fonksiyon printUser bir obje alıyor, ama biz direkt { name, age } olarak parçalayarak aldık.
+     Bu şekilde fonksiyonun içinde user.name veya user.age yazmaya gerek kalmıyor.
+
+     --------------------------------
+     const printColors = ([first,second])=>{
+           console.log(`İlk renk: ${first} | İkinci renk: ${second}`)
+        }
+        const colors = ["red", "green", "blue"];
+
+     
+       printColors(colors); // İlk renk: red | İkinci renk: green
+
+       
+        */
+       
+       
+        
+        
+    </script>
+</body>
+</html>
