@@ -1,5 +1,7 @@
 # js-hafta1
 Javascript 1. hafta çalışmaları , temel js, DOM, Array/Object işlemleri mini projeler.
+Dökümanlar sadece javascript konuları içerir, dosya kalabalığı ve karışıklığı önlemek için,
+HTML dosyası içinde kullanılmıştır.
 
 
 # JavaScript Hafta 1 Çalışmaları
@@ -31,8 +33,9 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
   - 3-loops.html
 
 /02-array-object
-  - fetch-json.html
   - arrays.html
+  - destructuring.html
+  - fetch-json.html
   - object.html
   - storage.html
 
