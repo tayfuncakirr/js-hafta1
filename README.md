@@ -37,6 +37,8 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
   - destructuring.html
   - fetch-json.html
   - object.html
+  - op.chaining.html
+  - spread-rest.html
   - storage.html
 
 /03-dom
@@ -44,6 +46,7 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
     
 /04-examples 
  /to-do-list
+  - background.jpg
   - index.html
   - script.js
   - style.css 
