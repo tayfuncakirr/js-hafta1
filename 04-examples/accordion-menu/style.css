@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+
+ 
+ *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-left: 15px;
+    width: 90px;
+    position: absolute;
+    z-index: 100;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3F2FD;
+}
+
+.accordion{
+    background-color: #fff;
+    max-width: 530px;
+    width: 100%;
+    padding: 15px;
+    margin: 0 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2) ;
+}
+.accordion .panels{
+    background-color: antiquewhite;
+    margin: 10px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    
+}
+.panels header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    padding:0 15px;
+    cursor:pointer;
+    border:  1px solid #FFD6B3;
+}
+.panels .loremtext{
+    height: 0;
+    padding: 0 15px;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+}
+
+.accordion:nth-child(1){
+    background-color: #FFF7F0;
+    border:1px solid #FFD6B3;
+}
+.accordion:nth-child(2){
+    background-color: #f0faff;
+    border:1px solid #cceeff;
+}
+.accordion:nth-child(3){
+    background-color: #fff0f3;
+    border:1px solid #ffccd6;
+}
+.accordion:nth-child(4){
+    background-color: #f0f0ff;
+    border:1px solid #ccccff;
+}
+
+
+ 
