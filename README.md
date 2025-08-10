@@ -15,8 +15,9 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
 - Fonksiyonlar (normal & arrow function)
 - Döngüler (`for`, `while`, `forEach`)
 - Array metodları (`map`, `filter`, `reduce`)
-- DOM işlemleri  -eksik-
-- Event handling (`olay dinleme`) -eksik-
+- DOM işlemleri
+- Event handling (`olay dinleme`) 
+- Destructuring
 - fetch API ile veri çekme
 - LocalStorage -- today
 - Try-catch yapısı -- 
@@ -42,16 +43,14 @@ Amaç, modern JavaScript bilgimi pekiştirmek ve DOM manipülasyonu pratiği yap
   - storage.html
 
 /03-dom
-  - dom-test.html
+  - dom-events.html
     
 /04-examples 
+ /accordion-menu
  /to-do-list
-  - background.jpg
-  - index.html
-  - script.js
-  - style.css 
-    
- - list-add.html
+ /slide-galery
+ /to-do-list
+ 
 
 
  Notlar
